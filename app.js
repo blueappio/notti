@@ -23,20 +23,20 @@ app.controller('mainController', function($scope, $mdToast){
     $scope.notti.onSuccess = function(message){
         $mdToast.show(
           $mdToast.simple()
-            .content(message)
-            .position('top right')
-            .hideDelay(2500)
+            .textContent(message)
+            .position('top')
             .theme("success-toast")
+            .hideDelay(2500)
         );
     };
 
     $scope.notti.onError = function(message){
         $mdToast.show(
           $mdToast.simple()
-            .content(message)
-            .position('top right')
+            .textContent(message)
+            .position('top')
+            .theme('error-toast')
             .hideDelay(2500)
-            .theme("error-toast")
         );
     };
 

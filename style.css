@@ -3,9 +3,15 @@
   font-size: large;
   font-weight: 500;
 }
-md-toast.md-success-toast-theme {
+md-toast.md-success-toast-theme .md-toast-content {
     background-color: green;
 }
-md-toast.md-error-toast-theme {
+
+md-toast.md-error-toast-theme .md-toast-content {
     background-color: red;
+}
+
+md-toast {
+  top   :10px;
+  left  :calc(50vw - 100px);
 }
