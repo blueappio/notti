@@ -20,6 +20,9 @@ app.controller('mainController', function($scope, $mdToast){
     $scope.isFullColor = false;
     $scope.scopeVariable = {};
 
+    // Disabling the mouse right click event
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
     $scope.notti.onSuccess = function(message){
         $mdToast.show(
           $mdToast.simple()
