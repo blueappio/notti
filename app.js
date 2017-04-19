@@ -21,7 +21,7 @@ app.controller('mainController', function($scope, $mdToast){
     $scope.scopeVariable = {};
 
     // Disabling the mouse right click event
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('contextmenu', function(event) { event.preventDefault();});
 
     $scope.notti.onSuccess = function(message){
         $mdToast.show(
